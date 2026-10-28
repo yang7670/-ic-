@@ -1,0 +1,33 @@
+# TSMC 0.18um (C18) DRC 參數 (單位: um)，由 擺放.py 讀入
+# 格式: 名稱 = 數值   (# 之後是註解)
+
+GRID                   = 0.005    # 5nm 製造網格
+L_MIN                  = 0.18     # 最小 Poly 閘極長度
+POLY_EXT_ACTIVE        = 0.18     # PO1.E1: Poly 超出 Active (end cap) 0.2
+DIFF_TO_DIFF_SPACE     = 0.28      # 未共腳時 (Diffusion Break) 擴散區最小間距
+WELL_OVERLAP_DIFF      = 0.5      # N-Well 涵蓋 P-Diff 距離
+WELL_TO_NMOS_DIFF      = 0.26     # N-Well 距離 N-Diff 間距
+PMOS_TO_NMOS_GAP       = 0.8     # PMOS Active 至 NMOS Active 通道距離
+CONTACT_SIZE           = 0.24     # CONT.A1: Contact 固定 0.23 x 0.23
+CONTACT_OVERLAP_DIFF   = 0.12     # CONT.O2: Active 包 Contact 0.12
+POLY_TO_CT             = 0.13     # 閘極 Poly 到 S/D Contact 間距 (決定 S/D 欄寬 = 0.22 + 2*0.14 = 0.50)
+CONTACT_SPACE          = 0.26     # Contact 孔對孔最小間距
+POWER_RAIL_HEIGHT      = 0.60     # Power Rail 高度
+POLY_SPACE             = 0.25     # 同一閘極 P/N 兩塊 Poly 頭對頭最小間距
+PO_CT_ENC              = 0.12     # CONT.O1: Poly 包 Contact 0.12 -> Poly 墊 0.47
+PO_CT_TO_DIFF          = 0.18     # CONT.S3: Poly Contact 到 Diffusion 0.18
+PO_PAD_TO_DIFF         = 0.10     # Poly 墊 (比閘極寬) 到 Diffusion 的保留距離
+PN_GAP_MIN             = 1.40     # P/N 各一個 Poly 墊 (Contact 離 diff 0.22 + 墊 0.47) + 兩墊間距 0.25 -> 1.39
+M1_EOL_CT              = 0.08     # ME1.O2: M1 線端包 Contact 0.08
+M1_MIN_AREA            = 0.2   # ME1.A1
+TAP_INSET              = 0.05
+TAP_CT_ENC             = 0.15
+IMP_ENC_DIFF           = 0.25
+M1_WIDTH               = 0.23
+CT_ENC_DIFF_W          = 0.12     # CONT.O2 (沿 W 方向)
+NW_ENC_DIFF            = 0.25     # DIFF.O1: NWELL 包 N+ (NTAP) 0.25
+NW_ENC_PDIFF           = 0.50     # DIFF.O2.18: NWELL 包 P+ diffusion (1.8V) 0.5
+IMP_SPACE              = 0.44
+GR_IMP_ENC             = 0.11
+RAIL_GRID_OFF          = 0.0      # Guard ring M1 中心一律落在走線格點上 (Via 墊才會和 rail 對齊)
+TAP_TO_DIFF	       = 0.28

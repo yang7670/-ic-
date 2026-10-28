@@ -1,0 +1,23 @@
+# 拉線.py 走線 DRC 參數 (單位: um / um^2)，由 拉線.py 讀入
+# 格式: 名稱 = 數值   (# 之後是註解)
+
+GRID_PITCH       = 0.15     # 預設值；實際一律用版圖帶來的 layout["grid_pitch"] (擺放.py 的 PIN_GRID)
+M1_WIDTH         = 0.24
+M1_SPACE         = 0.25
+M1_ENCLOSURE     = 0.02
+M2_WIDTH         = 0.27
+M2_SPACE         = 0.27     # ME2.S1
+M2_ENCLOSURE     = 0.02
+M3_WIDTH         = 0.27
+M3_SPACE         = 0.27
+M3_ENCLOSURE     = 0.02
+VIA1_SIZE        = 0.25
+VIA2_SIZE        = 0.25
+VIA1_M1_ENC      = 0.01     # M1 墊沿短邊包 VIA1
+VIA_EOL_ENC      = 0.10     # VIA1.O3 / ME2.O2 / VIA2.O3 / ME3.O2: 線端包 Via 0.1
+VIA_SPACE        = 0.26     # VIA1-VIA1 / VIA2-VIA2 最小間距 (不分 net)
+
+# 最小面積 (ME1.A1 / ME2.A1 / ME3.A1)
+M1_MIN_AREA      = 0.20
+M2_MIN_AREA      = 0.24
+M3_MIN_AREA      = 0.24
